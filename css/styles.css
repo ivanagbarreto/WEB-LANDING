@@ -484,6 +484,7 @@ p{
     font-weight: 600;
     font-size: 1.4rem;
     color: #FFFFFF;
+    font-family: var(--first-font);
   }
   .features .cards .card p {
     font-size: 1rem;
