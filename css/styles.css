@@ -40,7 +40,7 @@ background-color: var(--third-color);
 a{
 text-decoration: none;
 transition: all 0.3s ease-out;
-color: var(--white-color) 
+color: var(--third-color) 
 }
 a:hover {
 opacity: 0.75;
@@ -69,4 +69,64 @@ h6{
 margin: 0;
 font-size: .7rem;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    line-height: 1.6rem;
+    color: var(--second-color);
+}
 
+/*.********************* COMPONENTS *************************************/
+
+/*.******** menu **********/
+
+.menu-btn{
+    background-color: var(--transparent-color);
+    border: 0;
+}
+.menu-btn svg{
+    fill: var(--third-color);
+}
+.menu{
+    position: fixed;
+    left:0;
+    top: var(--header-height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+}
+
+/*.********************* UTILITIES *************************************/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+}
+.none{
+    display: none;
+}
+
+
+/*.********************* SITE STYLES *************************************/
+.header{
+    position: fixed;
+    z-index: 99995;
+    padding: 1rem;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--white-color);
+}
+
+.header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
