@@ -31,7 +31,8 @@ background-attachment: fixed;
 background-position: 45% 0%; 
 height: 100vh;
 width: 100%;
-background-color: var(--grey-dark-color);
+background-color: #0d0d1c;
+timeline-scope: --hero-view;
 }
 
 a{
@@ -315,6 +316,7 @@ p{
   .hero .content .content-inner h2 {
     font-size: 3.5rem;
     text-align: center;
+    
   }
   .hero .content .content-inner h2.first {
     animation: both title1;
@@ -417,10 +419,15 @@ p{
 
 
   /*.********************* CARDS**********************/
-
+  #aboutus{
+    
+        height: 150vh;
+        view-timeline: --hero-view;
+      
+  }
 
   .features {
-    padding: 100px 0;
+    padding: 500px 0;
     background-image: linear-gradient(transparent, black, transparent);
     position: relative;
     overflow: hidden;
@@ -442,7 +449,7 @@ p{
     padding: 30px;
     text-align: center;
     border: 1px solid var(--third-color);
-    background-color: rgb(50 50 50 / 23%);
+    background-color: rgb(250 250 250 / 23%);
     transition: background-color 0.3s;
     border-radius: 4px;
     -webkit-box-reflect: below 5px
@@ -476,6 +483,7 @@ p{
     line-height: 1.6;
     font-weight: 600;
     font-size: 1.4rem;
+    color: #FFFFFF;
   }
   .features .cards .card p {
     font-size: 1rem;
